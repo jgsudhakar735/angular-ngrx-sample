@@ -1,0 +1,21 @@
+<p>Comments List of the Day</p>
+<div>
+<table border="1">
+  <thead>
+    <tr>
+      <td>Id</td>
+      <td>Name</td>
+      <td>E-Mail</td>
+      <td>Body</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of comments$ | async">
+      <td> {{item.id}}</td>
+      <td> {{item.name}}</td>
+      <td> {{item.email}}</td>
+      <td> {{item.body}}</td>
+    </tr>
+  </tbody>
+</table>
+</div>

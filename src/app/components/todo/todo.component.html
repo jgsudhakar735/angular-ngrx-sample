@@ -1,0 +1,22 @@
+<p>Todo List of the Day</p>
+
+<div>
+  <table border="1">
+    <thead>
+      <tr>
+        <td>ID</td>
+        <td>UserId</td>
+        <td>Title</td>
+        <td>Status</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of todo$ | async">
+        <td>{{ item.id }}</td>
+        <td>{{ item.userId }}</td>
+        <td>{{ item.title }}</td>
+        <td>{{ item.completed }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
